@@ -1,0 +1,10 @@
+div.caption
+  .picture
+    img(src='#{caption.images.thumbnail.url}')
+  img(src='#{caption.user.profile_picture}', class='profilepic')
+  .info
+    h5 by 
+      a(href='#') #{caption.user.username}
+    p.muted 3 minutes ago
+    - if (caption.caption != null)
+      p.description #{caption.caption.text}

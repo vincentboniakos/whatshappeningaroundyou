@@ -1,0 +1,89 @@
+
+h2, input{
+  font-family: Ruda, Arial;
+}
+.actions input {
+  font-size: 1.4em;
+}
+a {
+  color: #00B7FF;
+}
+
+html, body, .start, #map_canvas {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+  background: #FAFAFA;
+  background: url(../images/bg.png) repeat;
+}
+
+.actions {
+	position:absolute;
+	z-index:10;
+  left:20%;
+  right:20%;
+  top: 5%;
+	background: white;
+  margin: 0px;
+  padding: 30px;
+  text-align:center;
+  box-shadow: 2px 2px 12px silver;
+  -webkit-box-shadow: 2px 2px 12px silver;
+  -moz-box-shadow: 2px 2px 12px silver;
+}
+form#new_record{
+  margin-top:50px;
+}
+
+.button{
+  border: none;
+  background-color: #DB3B7B;
+  color: white;
+  padding: 10px 20px 10px 20px;
+}
+
+
+.caption {
+  float:left;
+  margin: 10px;
+  background: white;
+  box-shadow: 2px 2px 12px silver;
+  -webkit-box-shadow: 2px 2px 12px silver;
+  -moz-box-shadow: 2px 2px 12px silver;
+  padding: 10px;
+  width: 150px;
+}
+
+.caption h5 {
+  margin: 0px;
+}
+
+.caption h5, .caption p{
+  font-size:0.9em;
+}
+.caption .profilepic {
+  float: right;
+  margin-top: 5px;
+  width:30px;
+}
+.caption p.description{
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+@media (max-width: 767px) { 
+
+  .actions h2{
+    font-size:20px;
+  }
+  form#new_record{
+    margin-top:20px;
+  }
+
+}
