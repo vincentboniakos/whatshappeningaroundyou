@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "express": "*",
-    "jade": "*",
+    "jade": "2.5.x",
     "mongoose": "*",
     "instagram-node-lib":"*",
     "request":"*"
