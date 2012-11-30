@@ -44,7 +44,7 @@ $(document).ready(function () {
     columnWidth: 190,
     isAnimated: true,
     animationOptions: {
-      duration: 150,
+      duration: 750,
     }
   });
 
