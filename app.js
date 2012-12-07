@@ -7,6 +7,7 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , record = require('./routes/record')
+  , http = require('http')
   , path = require('path');
 
 // Global variable
@@ -18,7 +19,7 @@ Instagram = require('instagram-node-lib');
 Instagram.set('client_id', INSTAGRAM_CLIENT_ID);
 Instagram.set('client_secret', INSTAGRAM_CLIENT_SECRET);
 
-var app = express.createServer(express.logger());
+var app = express();
 
 
 
@@ -57,7 +58,6 @@ app.post('/records', record.create);
 app.get('/records/:id', record.show);
 
 
-var port = process.env.PORT || 3000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
+http.createServer(app).listen(app.get('port'), function(){
+  console.log("Express server listening on port " + app.get('port'));
 });
