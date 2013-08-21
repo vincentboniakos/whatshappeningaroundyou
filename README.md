@@ -3,6 +3,8 @@ whatshappeningaroundyou
 
 A little node application wich show what is happening around you on intagram.
 
+Demo : http://whatshappeningaroundyou.herokuapp.com/
+
 You will need add some configuration in order to run it.
 
 Create an app on instagram and add the client id and secret to your environment (.profile, .bash_profile, ...):  
@@ -16,5 +18,6 @@ You will need to either create a database named "around_dev" on localhost or cre
 Then run :  
 `npm install`  
 `node app`
+
 
 
